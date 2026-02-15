@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Stack Sans Headline", sans-serif;
+    color: #030930;
+
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main .homepage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav .elems ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elems ul li{
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.elems ul li::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid #0e1647;
+    transition: all ease-in 0.2s;
+}
+
+.elems ul li:hover:after{
+    width: 100%;
+}
+
+nav .logo img{
+    width: 150px;
+}
+
+nav button{
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+nav button:hover{
+    background-color: #030930;
+    color: whitesmoke;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+}
+
+.middle{
+    width: 100%;
+    padding: 120px 200px;
+}
+
+.middle h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.middle p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #444562;
+}
+
+.blurBackgound{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    background-color: #030930;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.search input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 20px 30px;
+    background-color: transparent;
+    color: #f8f5f7de;
+    font-size: 17px;
+}
+
+.search i{
+    color: #f8f5f7de;
+    margin-right: -20px;
+}
