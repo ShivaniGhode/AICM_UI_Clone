@@ -1,303 +1,302 @@
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Stack Sans Headline", sans-serif;
-    color: #030930;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Stack Sans Headline", sans-serif;
+  color: #030930;
 }
 
-.main{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-.main video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.main .homepage{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top:0;
+.main .homepage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 200px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 200px;
 }
 
-nav .elems ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+nav .elems ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.elems ul li{
-    font-size: 18px;
-    letter-spacing: 1px;
-    position: relative;
-    cursor: pointer;
+.elems ul li {
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
 }
 
-.elems ul li::after{
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0%;
-    border-bottom: 2px solid #0e1647;
-    transition: all ease-in 0.2s;
+.elems ul li::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  border-bottom: 2px solid #0e1647;
+  transition: all ease-in 0.2s;
 }
 
-.elems ul li:hover:after{
-    width: 100%;
+.elems ul li:hover:after {
+  width: 100%;
 }
 
-nav .logo img{
-    width: 150px;
+nav .logo img {
+  width: 150px;
 }
 
-nav button{
-    padding: 20px 30px;
-    font-weight: 600;
-    font-size: 17px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
+nav button {
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
 }
 
-nav button:hover{
-    background-color: #030930;
-    color: whitesmoke;
-    transition: all ease-in 0.2s;
-    cursor: pointer;
+nav button:hover {
+  background-color: #030930;
+  color: whitesmoke;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
 }
 
-.middle{
-    width: 100%;
-    padding: 120px 200px;
+.middle {
+  width: 100%;
+  padding: 120px 200px;
 }
 
-.middle h1{
-    font-size: 60px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    line-height: 60px;
+.middle h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 60px;
 }
 
-.middle p{
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 50px;
-    color: #444562;
+.middle p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #444562;
 }
 
-.blurBackgound{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.blurBackgound {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search{
-    background-color: #030930;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px;
-    border-radius: 50px;
+.search {
+  background-color: #030930;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  border-radius: 50px;
 }
 
-.search input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    padding: 20px 30px;
-    background-color: transparent;
-    color: #f8f5f7de;
-    font-size: 17px;
+.search input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 20px 30px;
+  background-color: transparent;
+  color: #f8f5f7de;
+  font-size: 17px;
 }
 
-.search i{
-    color: #f8f5f7de;
-    margin-right: -20px;
+.search i {
+  color: #f8f5f7de;
+  margin-right: -20px;
 }
 
-.category{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.category {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.category h1{
-    font-size: 65px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-top: 50px;
+.category h1 {
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 50px;
 }
 
-.category p{
-    text-align: center;
-    columns: #b2b2b2;
-    font-size: 18px;
+.category p {
+  text-align: center;
+  columns: #b2b2b2;
+  font-size: 18px;
 }
 
-.cards{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
 }
 
-.cards .card{
-    width: 350px;
-    height: 460px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
+.cards .card {
+  width: 350px;
+  height: 460px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-.card video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.info{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.info h1{
-    font-size: 30px;
-    font-weight: 500;
+.info h1 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-.info button{
-    padding: 15px 30px;
-    font-weight: 600;
-    font-size: 17px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    margin-bottom: 10px;
-    color: white;
-    background-color: #030930;
+.info button {
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #030930;
 }
 
-.info button:hover{
-    background-color: whitesmoke;
-    color: #030930;
-    transition: all ease-in 0.2s;
-    cursor: pointer;
+.info button:hover {
+  background-color: whitesmoke;
+  color: #030930;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
 }
 
-.page3{
-    width: 100%;
-    height: 100vh;
+.page3 {
+  width: 100%;
+  height: 100vh;
 }
 
-#project-heading{
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 70px;
-    padding: 50px;
+#project-heading {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 70px;
+  padding: 50px;
 }
 
-.project-section{
-    width: 100%;
-    height: 100%;
+.project-section {
+  width: 100%;
+  height: 100%;
 }
-.swiper{
-    width: 100%;
-    height: fit-content;
-}
-
-.swiper-wrapper{
-    display: flex;
-    gap:20px;
+.swiper {
+  width: 100%;
+  height: fit-content;
 }
 
-.swiper-slide{
-    border-radius: 10px ;
-    border: 2px solid #D5ECFF;
-    background-color: #F4FAFF;
-    padding: 40px 30px;
+.swiper-wrapper {
+  display: flex;
+  gap: 20px;
 }
 
-.swiper-slide p{
-    font-weight: 600;
-    color: #636363;
+.swiper-slide {
+  border-radius: 10px;
+  border: 2px solid #d5ecff;
+  background-color: #f4faff;
+  padding: 40px 30px;
 }
 
-.swiper-slide .image{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    overflow: hidden;
+.swiper-slide p {
+  font-weight: 600;
+  color: #636363;
 }
 
-.swiper-slide .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.swiper-slide .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.navigator{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 10px;
+.swiper-slide .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.navigator-button{
-    width: fit-content;
-    padding: 20px 25px;
-    border: 3px solid #D5ECFF;
-    border-radius: 15px;
+.navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10px;
 }
 
-.navigator-button:hover{
-    background-color: #D5ECFF;
-    cursor: pointer;
+.navigator-button {
+  width: fit-content;
+  padding: 20px 25px;
+  border: 3px solid #d5ecff;
+  border-radius: 15px;
 }
 
-.navigator-button:active{
-    scale: 0.9;
+.navigator-button:hover {
+  background-color: #d5ecff;
+  cursor: pointer;
 }
 
-.navigator-button i{
-    font-size: 25px;
+.navigator-button:active {
+  scale: 0.9;
+}
+
+.navigator-button i {
+  font-size: 25px;
 }
